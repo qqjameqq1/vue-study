@@ -1,24 +1,21 @@
 <template>
 	<div id="wrapper">
-		<header>
-			<h3>这是Vuejs学习案例</h3>
-		</header>
 		
-		<div id="main">
-			<router-view
-		      class="view"
-		      keep-alive
-		      transition
-		      transition-mode="out-in">
-		    </router-view>
-		</div>
-		
-	    <footer>
+		<router-view>
+		</router-view>
+
+		<footer>
 	    	<p>&copy;CopyRight:lizhigang 2016</p>
 	    </footer>
 	</div>
-	
+
 </template>
+
+<script>
+	export default{
+		name:'App'
+	}
+</script>
 
 <style>
 	header,footer{

@@ -16,6 +16,14 @@ gulp.task('watch',function(){
     watch('app/components/*.vue',batch(function (events, done) {
         gulp.start('webpack', done);
     }));
+
+    watch('app/components/partials/*.vue',batch(function (events, done) {
+        gulp.start('webpack', done);
+    }));
+
+    watch('app/main.js',batch(function (events, done) {
+        gulp.start('webpack', done);
+    }));
 });
 
 //webpack静态处理
